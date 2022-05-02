@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="find_object_total">1</integer>
+    <string-array name="find_object_values">
+        <item>600 498 4 247 465 194 390 351 353 429 417 Найти здание Государственного Эрмитажа - Зимний дворец</item>
+
+    </string-array>
+</resources>
