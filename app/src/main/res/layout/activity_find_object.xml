@@ -13,5 +13,6 @@
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:textSize="24sp"
+        android:textColor="@color/my_black_white"
         android:textAlignment="center"/>
 </LinearLayout>

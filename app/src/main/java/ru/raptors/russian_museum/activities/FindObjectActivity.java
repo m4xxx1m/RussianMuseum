@@ -16,7 +16,7 @@ public class FindObjectActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Objects.requireNonNull(getSupportActionBar()).hide();
+        //Objects.requireNonNull(getSupportActionBar()).hide();
         if (taskNum < 0)
             taskNum = getTask();
         setContentView(R.layout.activity_find_object);
