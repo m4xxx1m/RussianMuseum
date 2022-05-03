@@ -1,6 +1,7 @@
 package ru.raptors.russian_museum.find_object;
 
 import android.content.Context;
+import android.content.res.TypedArray;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
@@ -41,7 +42,11 @@ public class FindObjectView extends View {
 
     public FindObjectView(Context context, FindObjectPicture findObjectData, int taskNum) {
         this(context);
-        picture = BitmapFactory.decodeResource(getResources(), R.drawable.find_object1);
+        // int resource = getResources().getIntArray(R.array.find_object_pictures)[taskNum];
+        TypedArray typedArray = getResources().obtainTypedArray(R.array.find_object_pictures);
+        int resource = typedArray.getResourceId(taskNum, -1);
+        picture = BitmapFactory.decodeResource(getResources(), resource);
+        typedArray.recycle();
         this.findObjectData = findObjectData;
     }
 

@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <integer name="find_object_total">1</integer>
+    <integer name="find_object_total">3</integer>
     <string-array name="find_object_values">
         <item>600 498 4 247 465 194 390 351 353 429 417 Найти здание Государственного Эрмитажа - Зимний дворец</item>
-
+        <item>600 598 5 11 203 0 175 0 122 116 134 79 203 Найдите чайник</item>
+        <item>600 382 9 97 208 102 127 123 126 125 175 138 175 151 129 167 130 181 171 183 208 Найдите церковь</item>
     </string-array>
+    <integer-array name="find_object_pictures">
+        <item>@drawable/find_object1</item>
+        <item>@drawable/find_object2</item>
+        <item>@drawable/find_object3</item>
+    </integer-array>
 </resources>

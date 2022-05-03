@@ -7,12 +7,36 @@
     android:paddingVertical="5dp"
     android:paddingHorizontal="10dp"
     android:id="@+id/place_holder">
-    <TextView
-        android:id="@+id/title"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:textSize="24sp"
-        android:textColor="@color/my_black_white"
-        android:textAlignment="center"/>
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:textSize="24sp"
+            android:textColor="@color/my_black_white"/>
+
+        <LinearLayout
+            android:id="@+id/cross"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:layout_marginEnd="20dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground">
+
+            <View
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_gravity="center"
+                android:background="@drawable/cross" />
+        </LinearLayout>
+
+    </LinearLayout>
 </LinearLayout>
