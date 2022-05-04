@@ -12,22 +12,31 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="ru.raptors.russian_museum.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" >
+        android:id="@+id/navigation_games"
+        android:name="ru.raptors.russian_museum.ui.games.GamesFragment"
+        android:label="@string/title_games"
+        tools:layout="@layout/fragment_games" >
         <action
             android:id="@+id/action_navigation_dashboard_to_findObjectActivity"
             app:destination="@id/findObjectActivity" />
+        <action
+            android:id="@+id/action_navigation_games_to_puzzlesActivity"
+            app:destination="@id/puzzlesActivity" />
     </fragment>
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="ru.raptors.russian_museum.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        android:id="@+id/navigation_ar"
+        android:name="ru.raptors.russian_museum.ui.ar.ARFragment"
+        android:label="@string/title_ar"
+        tools:layout="@layout/fragment_ar" />
+
     <activity
         android:id="@+id/findObjectActivity"
         android:name="ru.raptors.russian_museum.activities.FindObjectActivity"
         android:label="FindObjectActivity" />
+    <activity
+        android:id="@+id/puzzlesActivity"
+        android:name="ru.raptors.russian_museum.puzzles.PuzzlesActivity"
+        android:label="activity_puzzles"
+        tools:layout="@layout/activity_puzzles" />
 </navigation>

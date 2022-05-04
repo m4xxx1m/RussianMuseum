@@ -1,6 +1,10 @@
 <resources>
     <string name="app_name">Russian Museum</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_home">ГЛАВНАЯ</string>
+    <string name="title_games">ИГРЫ</string>
+    <string name="title_ar">ДОПОЛНЕННАЯ РЕАЛЬНОСТЬ</string>
+    <string name="puzzles">ПАЗЛЫ</string>
+    <string name="findObject">НАЙДИ ПРЕДМЕТ</string>
+    <string name="guessGenre">УГАДАЙ ЖАНР</string>
+    <string name="tests">ТЕСТЫ</string>
 </resources>

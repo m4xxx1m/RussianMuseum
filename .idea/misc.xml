@@ -4,9 +4,14 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/max/AndroidStudioProjects/RussianMuseum/app/src/main/res/drawable/cross.xml" value="0.1785" />
+        <entry key="..\:/Users/max/AndroidStudioProjects/RussianMuseum/app/src/main/res/drawable/ic_puzzles.xml" value="0.1785" />
+        <entry key="..\:/Users/max/AndroidStudioProjects/RussianMuseum/app/src/main/res/font/eb.xml" value="0.20572916666666666" />
+        <entry key="..\:/Users/max/AndroidStudioProjects/RussianMuseum/app/src/main/res/font/eb_garamond.xml" value="0.20572916666666666" />
         <entry key="..\:/Users/max/AndroidStudioProjects/RussianMuseum/app/src/main/res/layout/activity_find_object.xml" value="0.14130434782608695" />
         <entry key="..\:/Users/max/AndroidStudioProjects/RussianMuseum/app/src/main/res/layout/activity_main.xml" value="0.14130434782608695" />
+        <entry key="..\:/Users/max/AndroidStudioProjects/RussianMuseum/app/src/main/res/layout/activity_puzzles.xml" value="0.1381340579710145" />
         <entry key="..\:/Users/max/AndroidStudioProjects/RussianMuseum/app/src/main/res/layout/fragment_dashboard.xml" value="0.14130434782608695" />
+        <entry key="..\:/Users/max/AndroidStudioProjects/RussianMuseum/app/src/main/res/layout/fragment_games.xml" value="0.22" />
         <entry key="..\:/Users/max/AndroidStudioProjects/RussianMuseum/app/src/main/res/layout/fragment_notifications.xml" value="0.14130434782608695" />
       </map>
     </option>

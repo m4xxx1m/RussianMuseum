@@ -1,25 +1,22 @@
-package ru.raptors.russian_museum.ui.notifications;
+package ru.raptors.russian_museum.ui.ar;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.ViewModelProvider;
+import ru.raptors.russian_museum.databinding.FragmentArBinding;
 
-import ru.raptors.russian_museum.databinding.FragmentNotificationsBinding;
+public class ARFragment extends Fragment {
 
-public class NotificationsFragment extends Fragment {
-
-    private FragmentNotificationsBinding binding;
+    private FragmentArBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
 
-        binding = FragmentNotificationsBinding.inflate(inflater, container, false);
+        binding = FragmentArBinding.inflate(inflater, container, false);
 
         return binding.getRoot();
     }

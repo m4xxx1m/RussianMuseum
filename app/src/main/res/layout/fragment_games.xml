@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.games.GamesFragment">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/toPuzzles"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginVertical="25dp"
+        android:clickable="true"
+        android:contentDescription="@string/puzzles"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        app:cardBackgroundColor="@color/card"
+        app:cardElevation="3dp"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/toFindObject"
+        app:layout_constraintEnd_toStartOf="@+id/toGuessGenre"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:text="@string/puzzles"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            app:drawableTopCompat="@drawable/ic_puzzles"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/toGuessGenre"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginVertical="25dp"
+        android:clickable="true"
+        android:contentDescription="@string/guessGenre"
+        android:focusable="true"
+        app:cardBackgroundColor="@color/card"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/toTests"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/toPuzzles"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/toFindObject"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginVertical="25dp"
+        android:clickable="true"
+        android:contentDescription="@string/findObject"
+        android:focusable="true"
+        app:cardBackgroundColor="@color/card"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintEnd_toStartOf="@+id/toTests"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toPuzzles" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/toTests"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginVertical="25dp"
+        android:clickable="true"
+        android:contentDescription="@string/tests"
+        android:focusable="true"
+        app:cardBackgroundColor="@color/card"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/toFindObject"
+        app:layout_constraintTop_toBottomOf="@+id/toGuessGenre" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
