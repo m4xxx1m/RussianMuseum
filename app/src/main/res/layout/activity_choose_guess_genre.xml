@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    android:overScrollMode="never"
+    tools:context=".activities.GuessGenreChooseActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="50dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="37dp"
+                android:fontFamily="@font/eb_garamond_regular"
+                android:text="@string/guessNGenre"
+                android:maxLines="2"
+                android:textAllCaps="true"
+                android:textColor="@color/another_dark_grey"
+                android:textSize="34sp"
+                android:typeface="serif"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/back_button"
+                android:layout_width="30dp"
+                android:layout_height="44dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginStart="20dp"
+                android:background="#00FFFFFF"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_angle_left"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:paddingTop="35dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/card_14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/age_14_gradient_2"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:layout_marginBottom="25dp"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="117dp"
+                    android:layout_height="90dp"
+                    android:layout_marginStart="4dp"
+                    android:src="@drawable/from14"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/age14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="@string/age_14_and_more"
+                    android:fontFamily="@font/futurademic_italic"
+                    android:textSize="36sp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toTopOf="@id/one_genre_out_of_6"/>
+                <TextView
+                    android:id="@+id/one_genre_out_of_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textAlignment="textEnd"
+                    android:text="@string/one_genre_out_of_6"
+                    android:fontFamily="@font/futuralightc_italic"
+                    android:textSize="20sp"
+                    app:layout_constraintTop_toBottomOf="@id/age14"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/card_8_13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/age_8_13_gradient_2"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:layout_marginBottom="25dp"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="117dp"
+                    android:layout_height="90dp"
+                    android:layout_marginStart="4dp"
+                    android:src="@drawable/from8to13"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/age8_13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="@string/age_8_13"
+                    android:fontFamily="@font/futurademic_italic"
+                    android:textSize="36sp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toTopOf="@id/one_genre_out_of_4"/>
+                <TextView
+                    android:id="@+id/one_genre_out_of_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textAlignment="textEnd"
+                    android:text="@string/one_genre_out_of_4"
+                    android:fontFamily="@font/futuralightc_italic"
+                    android:textSize="20sp"
+                    app:layout_constraintTop_toBottomOf="@id/age8_13"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/card_6_8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/age_6_8_gradient_2"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:layout_marginBottom="25dp"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="117dp"
+                    android:layout_height="90dp"
+                    android:layout_marginStart="4dp"
+                    android:src="@drawable/from6to8"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/age6_8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="@string/age_6_8"
+                    android:fontFamily="@font/futurademic_italic"
+                    android:textSize="36sp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toTopOf="@id/one_genre_out_of_2"/>
+                <TextView
+                    android:id="@+id/one_genre_out_of_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textAlignment="textEnd"
+                    android:text="@string/one_genre_out_of_2"
+                    android:fontFamily="@font/futuralightc_italic"
+                    android:textSize="20sp"
+                    app:layout_constraintTop_toBottomOf="@id/age6_8"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

@@ -2,4 +2,5 @@
 <resources>
     <color name="my_white_black">#FF121212</color>
     <color name="my_black_white">#FFFFFFFF</color>
+    <color name="another_dark_grey">#FFFFFF</color>
 </resources>

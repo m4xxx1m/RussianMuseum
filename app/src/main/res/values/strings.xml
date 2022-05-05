@@ -5,6 +5,13 @@
     <string name="title_ar">ДОПОЛНЕННАЯ РЕАЛЬНОСТЬ</string>
     <string name="puzzles">ПАЗЛЫ</string>
     <string name="findObject">НАЙДИ ПРЕДМЕТ</string>
-    <string name="guessGenre">УГАДАЙ ЖАНР</string>
+    <string name="guessGenre">ОПРЕДЕЛИ ЖАНР</string>
+    <string name="guessNGenre">ОПРЕДЕЛИ\nЖАНР</string>
     <string name="tests">ТЕСТЫ</string>
+    <string name="age_14_and_more">14+ лет</string>
+    <string name="age_8_13">8–13 лет</string>
+    <string name="age_6_8">6–8 лет</string>
+    <string name="one_genre_out_of_6">Один из 6\nжанров</string>
+    <string name="one_genre_out_of_4">Один из 4\nжанров</string>
+    <string name="one_genre_out_of_2">Один из 2\nжанров</string>
 </resources>

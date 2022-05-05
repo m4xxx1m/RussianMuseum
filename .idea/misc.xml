@@ -3,25 +3,32 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/User/StudioProjects/RussianMuseum/app/src/main/res/drawable/age_14_gradient.xml" value="0.262" />
-        <entry key="..\:/Users/User/StudioProjects/RussianMuseum/app/src/main/res/drawable/cross.xml" value="0.262" />
-        <entry key="..\:/Users/User/StudioProjects/RussianMuseum/app/src/main/res/drawable/ic_angle_left.xml" value="0.262" />
-        <entry key="..\:/Users/User/StudioProjects/RussianMuseum/app/src/main/res/drawable/shadow.xml" value="0.262" />
-        <entry key="..\:/Users/User/StudioProjects/RussianMuseum/app/src/main/res/layout/activity_main.xml" value="0.15433946130825138" />
-        <entry key="..\:/Users/User/StudioProjects/RussianMuseum/app/src/main/res/layout/activity_puzzles.xml" value="0.33" />
-        <entry key="..\:/Users/User/StudioProjects/RussianMuseum/app/src/main/res/layout/puzzle.xml" value="0.5" />
-        <entry key="..\:/Users/User/StudioProjects/RussianMuseum/app/src/main/res/layout/puzzles_age_category.xml" value="0.25" />
-        <entry key="..\:/Users/User/StudioProjects/RussianMuseum/app/src/main/res/layout/sample_puzzle_age_category_view.xml" value="0.2894399315946986" />
+        <entry key="..\:/Users/max/AndroidStudioProjects/RussianMuseum/app/src/main/res/drawable/age_14_gradient.xml" value="0.1785" />
+        <entry key="..\:/Users/max/AndroidStudioProjects/RussianMuseum/app/src/main/res/drawable/age_14_gradient_2.xml" value="0.1785" />
+        <entry key="..\:/Users/max/AndroidStudioProjects/RussianMuseum/app/src/main/res/drawable/age_6_8_gradient_2.xml" value="0.1785" />
+        <entry key="..\:/Users/max/AndroidStudioProjects/RussianMuseum/app/src/main/res/drawable/age_8_13_gradient_2.xml" value="0.1785" />
         <entry key="..\:/Users/max/AndroidStudioProjects/RussianMuseum/app/src/main/res/drawable/cross.xml" value="0.1785" />
+        <entry key="..\:/Users/max/AndroidStudioProjects/RussianMuseum/app/src/main/res/drawable/ic_angle_left.xml" value="0.1785" />
+        <entry key="..\:/Users/max/AndroidStudioProjects/RussianMuseum/app/src/main/res/drawable/ic_define_genre.xml" value="0.1785" />
+        <entry key="..\:/Users/max/AndroidStudioProjects/RussianMuseum/app/src/main/res/drawable/ic_find_object.xml" value="0.1785" />
         <entry key="..\:/Users/max/AndroidStudioProjects/RussianMuseum/app/src/main/res/drawable/ic_puzzles.xml" value="0.1785" />
+        <entry key="..\:/Users/max/AndroidStudioProjects/RussianMuseum/app/src/main/res/drawable/ic_quizes.xml" value="0.1785" />
+        <entry key="..\:/Users/max/AndroidStudioProjects/RussianMuseum/app/src/main/res/drawable/red_card_gradient.xml" value="0.1785" />
+        <entry key="..\:/Users/max/AndroidStudioProjects/RussianMuseum/app/src/main/res/drawable/shadow.xml" value="0.1785" />
         <entry key="..\:/Users/max/AndroidStudioProjects/RussianMuseum/app/src/main/res/font/eb.xml" value="0.20572916666666666" />
         <entry key="..\:/Users/max/AndroidStudioProjects/RussianMuseum/app/src/main/res/font/eb_garamond.xml" value="0.20572916666666666" />
+        <entry key="..\:/Users/max/AndroidStudioProjects/RussianMuseum/app/src/main/res/layout/activity_choose_guess_genre.xml" value="0.22" />
         <entry key="..\:/Users/max/AndroidStudioProjects/RussianMuseum/app/src/main/res/layout/activity_find_object.xml" value="0.14130434782608695" />
+        <entry key="..\:/Users/max/AndroidStudioProjects/RussianMuseum/app/src/main/res/layout/activity_guess_genre.xml" value="0.1381340579710145" />
         <entry key="..\:/Users/max/AndroidStudioProjects/RussianMuseum/app/src/main/res/layout/activity_main.xml" value="0.14130434782608695" />
         <entry key="..\:/Users/max/AndroidStudioProjects/RussianMuseum/app/src/main/res/layout/activity_puzzles.xml" value="0.1381340579710145" />
+        <entry key="..\:/Users/max/AndroidStudioProjects/RussianMuseum/app/src/main/res/layout/fragment_ar.xml" value="0.1381340579710145" />
         <entry key="..\:/Users/max/AndroidStudioProjects/RussianMuseum/app/src/main/res/layout/fragment_dashboard.xml" value="0.14130434782608695" />
         <entry key="..\:/Users/max/AndroidStudioProjects/RussianMuseum/app/src/main/res/layout/fragment_games.xml" value="0.22" />
+        <entry key="..\:/Users/max/AndroidStudioProjects/RussianMuseum/app/src/main/res/layout/fragment_home.xml" value="0.1" />
         <entry key="..\:/Users/max/AndroidStudioProjects/RussianMuseum/app/src/main/res/layout/fragment_notifications.xml" value="0.14130434782608695" />
+        <entry key="..\:/Users/max/AndroidStudioProjects/RussianMuseum/app/src/main/res/layout/puzzle.xml" value="0.13333333333333333" />
+        <entry key="..\:/Users/max/AndroidStudioProjects/RussianMuseum/app/src/main/res/layout/puzzles_age_category.xml" value="0.1381340579710145" />
       </map>
     </option>
   </component>
