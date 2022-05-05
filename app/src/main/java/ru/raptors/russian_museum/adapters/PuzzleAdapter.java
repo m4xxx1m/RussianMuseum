@@ -2,6 +2,7 @@ package ru.raptors.russian_museum.adapters;
 
 import android.app.Dialog;
 import android.content.Context;
+import android.content.Intent;
 import android.content.res.Resources;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
@@ -21,7 +22,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 import ru.raptors.russian_museum.R;
+import ru.raptors.russian_museum.activities.PuzzlesActivity;
 import ru.raptors.russian_museum.puzzles.Puzzle;
+import ru.raptors.russian_museum.puzzles.PuzzleActivity;
 
 public class PuzzleAdapter extends RecyclerView.Adapter<PuzzleAdapter.ViewHolder> {
 
@@ -49,6 +52,13 @@ public class PuzzleAdapter extends RecyclerView.Adapter<PuzzleAdapter.ViewHolder
         holder.puzzleLabel.setText(puzzle.getLabel());
         holder.puzzleAuthor.setText(puzzle.getAuthor());
         holder.puzzleImage.setImageDrawable(ResourcesCompat.getDrawable(res, puzzle.getPaintingID(), null));
+        holder.puzzleLayout.setOnClickListener((par) ->
+        {
+            Intent intent = new Intent(context, PuzzleActivity.class);
+            intent.putExtra("puzzle", puzzle);
+            context.startActivity(intent);
+            ((PuzzlesActivity) context).finish();
+        });
     }
 
 

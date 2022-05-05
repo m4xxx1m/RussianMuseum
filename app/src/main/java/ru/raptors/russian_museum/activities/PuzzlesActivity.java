@@ -11,6 +11,7 @@ import java.util.ArrayList;
 
 import ru.raptors.russian_museum.R;
 import ru.raptors.russian_museum.adapters.PuzzleAdapter;
+import ru.raptors.russian_museum.puzzles.DifficultyLevel;
 import ru.raptors.russian_museum.puzzles.Puzzle;
 
 public class PuzzlesActivity extends AppCompatActivity {
