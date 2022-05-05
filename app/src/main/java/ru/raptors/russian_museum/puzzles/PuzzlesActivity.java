@@ -19,8 +19,8 @@ public class PuzzlesActivity extends AppCompatActivity {
         setContentView(R.layout.activity_puzzles);
 
         ArrayList<Puzzle> puzzles14 = new ArrayList<Puzzle>();
-        puzzles14.add(new Puzzle("Девятый вал", "Иван Айвазовский", R.drawable.puzzle_14_2));
-        puzzles14.add(new Puzzle("Лунная ночь на Днепре", "Архип Куинджи", R.drawable.puzzle_14_1));
+        puzzles14.add(new Puzzle("Девятый вал", "Иван Айвазовский", R.drawable.puzzle_14_2, DifficultyLevel.Over14));
+        puzzles14.add(new Puzzle("Лунная ночь на Днепре", "Архип Куинджи", R.drawable.puzzle_14_1, DifficultyLevel.Over14));
         LinearLayoutManager layoutManager= new LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL, false);
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.puzzles_14);
         recyclerView.setLayoutManager(layoutManager);

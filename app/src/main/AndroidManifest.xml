@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RussianMuseum">
         <activity
+            android:name=".puzzles.PuzzleActivity"
+            android:exported="false" />
+        <activity
             android:name=".puzzles.PuzzlesActivity"
             android:exported="false" />
         <activity
