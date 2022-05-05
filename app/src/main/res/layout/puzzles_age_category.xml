@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/futur"
-        android:text="14+ лет"
+        android:text="@string/age_14_and_more"
         android:textColor="#000000"
         android:textSize="24sp"
         android:textStyle="bold" />
@@ -20,6 +20,9 @@
         android:id="@+id/puzzles_14"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
         android:orientation="horizontal" />
 
 </LinearLayout>

@@ -1,18 +1,16 @@
 package ru.raptors.russian_museum.adapters;
 
-import android.app.Activity;
 import android.app.Dialog;
 import android.content.Context;
-import android.content.Intent;
 import android.content.res.Resources;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
-import android.text.Layout;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.FrameLayout;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -24,8 +22,6 @@ import java.util.List;
 
 import ru.raptors.russian_museum.R;
 import ru.raptors.russian_museum.puzzles.Puzzle;
-import ru.raptors.russian_museum.puzzles.PuzzleActivity;
-import ru.raptors.russian_museum.puzzles.PuzzlesActivity;
 
 public class PuzzleAdapter extends RecyclerView.Adapter<PuzzleAdapter.ViewHolder> {
 
@@ -53,15 +49,6 @@ public class PuzzleAdapter extends RecyclerView.Adapter<PuzzleAdapter.ViewHolder
         holder.puzzleLabel.setText(puzzle.getLabel());
         holder.puzzleAuthor.setText(puzzle.getAuthor());
         holder.puzzleImage.setImageDrawable(ResourcesCompat.getDrawable(res, puzzle.getPaintingID(), null));
-        holder.puzzleLayout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(context, PuzzleActivity.class);
-                intent.putExtra("puzzle", puzzle);
-                context.startActivity(intent);
-                ((PuzzlesActivity) context).finish();
-            }
-        });
     }
 
 
@@ -75,12 +62,16 @@ public class PuzzleAdapter extends RecyclerView.Adapter<PuzzleAdapter.ViewHolder
         final TextView puzzleLabel;
         final TextView puzzleAuthor;
         final FrameLayout puzzleLayout;
+        final ImageButton backButton;
+        final View view;
         ViewHolder(View view){
             super(view);
+            this.view = view;
             puzzleImage = view.findViewById(R.id.puzzleImage);
             puzzleLabel = view.findViewById(R.id.puzzleLabel);
             puzzleAuthor = view.findViewById(R.id.puzzleAuthor);
             puzzleLayout = view.findViewById(R.id.puzzleLayout);
+            backButton = view.findViewById(R.id.back_button);
         }
     }
 }

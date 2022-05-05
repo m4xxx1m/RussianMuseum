@@ -22,6 +22,9 @@
         <action
             android:id="@+id/action_navigation_games_to_puzzlesActivity"
             app:destination="@id/puzzlesActivity" />
+        <action
+            android:id="@+id/action_navigation_games_to_guessGenreChooseActivity"
+            app:destination="@id/guessGenreChooseActivity" />
     </fragment>
 
     <fragment
@@ -36,7 +39,12 @@
         android:label="FindObjectActivity" />
     <activity
         android:id="@+id/puzzlesActivity"
-        android:name="ru.raptors.russian_museum.puzzles.PuzzlesActivity"
+        android:name="ru.raptors.russian_museum.activities.PuzzlesActivity"
         android:label="activity_puzzles"
         tools:layout="@layout/activity_puzzles" />
+    <activity
+        android:id="@+id/guessGenreChooseActivity"
+        android:name="ru.raptors.russian_museum.activities.GuessGenreChooseActivity"
+        android:label="activity_choose_guess_genre"
+        tools:layout="@layout/activity_choose_guess_genre" />
 </navigation>

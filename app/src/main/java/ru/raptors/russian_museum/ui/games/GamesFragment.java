@@ -21,6 +21,8 @@ public class GamesFragment extends Fragment {
                 action_navigation_dashboard_to_findObjectActivity));
         binding.toPuzzles.setOnClickListener(v -> Navigation.findNavController(v).navigate(R.id.
                 action_navigation_games_to_puzzlesActivity));
+        binding.toGuessGenre.setOnClickListener(v -> Navigation.findNavController(v).navigate(R.id.
+                action_navigation_games_to_guessGenreChooseActivity));
         return binding.getRoot();
     }
 
