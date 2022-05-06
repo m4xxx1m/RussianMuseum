@@ -6,19 +6,74 @@
     android:layout_height="match_parent"
     tools:context=".puzzles.PuzzleActivity">
 
-    <ImageView
-        android:id="@+id/puzzle"
-        android:layout_width="340dp"
-        android:layout_height="483dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="32dp"
-        android:alpha="0.5"
-        android:scaleType="centerCrop"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/puzzle_14_1" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="40dp">
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="31dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="31dp"
+                android:background="#00FFFFFF"
+                android:foregroundGravity="center_vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/cross"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/eb_garamond_regular"
+                    android:text="Лунная ночь \nна Днепре"
+                    android:textColor="#231F20"
+                    android:textSize="28sp" />
+
+                <TextView
+                    android:id="@+id/author"
+                    android:layout_width="148dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/futuralightc"
+                    android:text="Архип Куинджи"
+                    android:textColor="#000000" />
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:id="@+id/puzzle"
+            android:layout_width="378dp"
+            android:layout_height="257dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="60dp"
+            android:alpha="0.5"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/puzzle_14_1" />
+
+    </LinearLayout>
 
     <RelativeLayout
         android:id="@+id/puzzlesLayout"

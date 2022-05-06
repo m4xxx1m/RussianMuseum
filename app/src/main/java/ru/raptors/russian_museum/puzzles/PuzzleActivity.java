@@ -21,6 +21,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -42,6 +43,8 @@ public class PuzzleActivity extends AppCompatActivity {
 
         final RelativeLayout layout = findViewById(R.id.puzzlesLayout);
         final ImageView imageView = findViewById(R.id.puzzle);
+        final TextView label = findViewById(R.id.label);
+        final TextView author = findViewById(R.id.author);
 
         Intent intent = getIntent();
         Puzzle puzzle = (Puzzle) intent.getSerializableExtra("puzzle");
@@ -50,18 +53,32 @@ public class PuzzleActivity extends AppCompatActivity {
             switch (puzzle.getDifficultyLevel())
             {
                 case Under8:
-                    rowsCount = 4;
-                    colsCount = 3;
+                    rowsCount = 3;
+                    colsCount = 4;
                     break;
                 case Under14:
-                    rowsCount = 7;
-                    colsCount = 5;
+                    rowsCount = 5;
+                    colsCount = 7;
                     break;
                 case Over14:
-                    rowsCount = 10;
-                    colsCount = 8;
+                    rowsCount = 8;
+                    colsCount = 10;
                     break;
             }
+            String newLabel = "";
+            String[] labelWords = puzzle.getLabel().split(" ");
+            for(int i = 0 ; i < labelWords.length ; i++)
+            {
+                newLabel += labelWords[i];
+                if(i == labelWords.length - 1) break;
+                if(i != labelWords.length / 2)
+                {
+                    newLabel += " ";
+                }
+                else newLabel += "\n";
+            }
+            label.setText(newLabel);
+            author.setText(puzzle.getAuthor());
         }
 
         // запускаем код, связанный с изображением, после того, как view было создано

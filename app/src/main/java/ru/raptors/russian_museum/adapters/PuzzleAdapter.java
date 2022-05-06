@@ -4,6 +4,7 @@ import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.Resources;
+import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.view.LayoutInflater;
@@ -52,6 +53,18 @@ public class PuzzleAdapter extends RecyclerView.Adapter<PuzzleAdapter.ViewHolder
         holder.puzzleLabel.setText(puzzle.getLabel());
         holder.puzzleAuthor.setText(puzzle.getAuthor());
         holder.puzzleImage.setImageDrawable(ResourcesCompat.getDrawable(res, puzzle.getPaintingID(), null));
+        switch (puzzle.getDifficultyLevel())
+        {
+            case Over14:
+                holder.gradient.setBackground(res.getDrawable(R.drawable.age_14_gradient));
+                break;
+            case Under14:
+            holder.gradient.setBackground(res.getDrawable(R.drawable.age_8_13_gradient_2));
+            break;
+            case Under8:
+                holder.gradient.setBackground(res.getDrawable(R.drawable.age_6_8_gradient_2));
+                break;
+        }
         holder.puzzleLayout.setOnClickListener((par) ->
         {
             Intent intent = new Intent(context, PuzzleActivity.class);
@@ -74,6 +87,7 @@ public class PuzzleAdapter extends RecyclerView.Adapter<PuzzleAdapter.ViewHolder
         final FrameLayout puzzleLayout;
         final ImageButton backButton;
         final View view;
+        final View gradient;
         ViewHolder(View view){
             super(view);
             this.view = view;
@@ -82,6 +96,7 @@ public class PuzzleAdapter extends RecyclerView.Adapter<PuzzleAdapter.ViewHolder
             puzzleAuthor = view.findViewById(R.id.puzzleAuthor);
             puzzleLayout = view.findViewById(R.id.puzzleLayout);
             backButton = view.findViewById(R.id.back_button);
+            gradient = view.findViewById(R.id.gradient);
         }
     }
 }
