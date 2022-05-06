@@ -7,13 +7,13 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="ru.raptors.russian_museum.ui.home.HomeFragment"
+        android:name="ru.raptors.russian_museum.fragments.home.HomeFragment"
         android:label="@string/title_home"
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/navigation_games"
-        android:name="ru.raptors.russian_museum.ui.games.GamesFragment"
+        android:name="ru.raptors.russian_museum.fragments.games.GamesFragment"
         android:label="@string/title_games"
         tools:layout="@layout/fragment_games" >
         <action
@@ -29,22 +29,23 @@
 
     <fragment
         android:id="@+id/navigation_ar"
-        android:name="ru.raptors.russian_museum.ui.ar.ARFragment"
+        android:name="ru.raptors.russian_museum.fragments.ar.ARFragment"
         android:label="@string/title_ar"
         tools:layout="@layout/fragment_ar" />
 
     <activity
         android:id="@+id/findObjectActivity"
-        android:name="ru.raptors.russian_museum.activities.FindObjectActivity"
+        android:name="ru.raptors.russian_museum.find_object.activities.FindObjectActivity"
         android:label="FindObjectActivity" />
     <activity
         android:id="@+id/puzzlesActivity"
-        android:name="ru.raptors.russian_museum.activities.PuzzlesActivity"
+        android:name="ru.raptors.russian_museum.puzzles.activities.PuzzlesActivity"
         android:label="activity_puzzles"
         tools:layout="@layout/activity_puzzles" />
     <activity
         android:id="@+id/guessGenreChooseActivity"
-        android:name="ru.raptors.russian_museum.activities.GuessGenreChooseActivity"
+        android:name="ru.raptors.russian_museum.guess_genre.GuessGenreChooseActivity"
         android:label="activity_choose_guess_genre"
-        tools:layout="@layout/activity_choose_guess_genre" />
+        tools:layout="@layout/activity_choose_guess_genre"/>
+
 </navigation>

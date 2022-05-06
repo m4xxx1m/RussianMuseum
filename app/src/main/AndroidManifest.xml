@@ -12,10 +12,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RussianMuseum">
         <activity
-            android:name=".activities.PuzzlesActivity"
+            android:name=".guess_genre.activity.GuessGenreActivity"
             android:exported="false" />
         <activity
-            android:name=".puzzles.PuzzleActivity"
+            android:name=".puzzles.activities.PuzzlesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".puzzles.activities.PuzzleActivity"
             android:exported="false" />
         <activity
             android:name=".activities.MainActivity"
@@ -26,8 +29,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activities.FindObjectActivity" />
-        <activity android:name=".activities.GuessGenreChooseActivity" />
+        <activity
+            android:name=".find_object.activities.FindObjectActivity"
+            android:exported="false" />
+        <activity
+            android:name=".guess_genre.GuessGenreChooseActivity"
+            android:exported="false" />
     </application>
 
 </manifest>

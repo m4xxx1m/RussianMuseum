@@ -16,6 +16,7 @@ import android.view.View;
 import java.util.Calendar;
 
 import ru.raptors.russian_museum.R;
+import ru.raptors.russian_museum.find_object.activities.FindObjectActivity;
 
 public class FindObjectView extends View {
     private final Paint paint = new Paint();
@@ -96,7 +97,8 @@ public class FindObjectView extends View {
     }
 
     private void rightAnswer() {
-        vibrate(800);
+        //vibrate(800);
+        ((FindObjectActivity)getContext()).showDialog();
     }
 
     private void vibrate(int milliseconds) {

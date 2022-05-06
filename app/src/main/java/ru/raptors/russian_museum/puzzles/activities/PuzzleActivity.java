@@ -1,10 +1,10 @@
-package ru.raptors.russian_museum.puzzles;
+package ru.raptors.russian_museum.puzzles.activities;
 
 import static java.lang.Math.abs;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.content.res.ResourcesCompat;
 
+import android.app.DialogFragment;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -14,10 +14,8 @@ import android.graphics.Paint;
 import android.graphics.Path;
 import android.graphics.PorterDuff;
 import android.graphics.PorterDuffXfermode;
-import android.graphics.Rect;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
-import android.net.Uri;
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
@@ -28,6 +26,10 @@ import java.util.Collections;
 import java.util.Random;
 
 import ru.raptors.russian_museum.R;
+import ru.raptors.russian_museum.fragments.DialogGameFinished;
+import ru.raptors.russian_museum.puzzles.Puzzle;
+import ru.raptors.russian_museum.puzzles.PuzzlePiece;
+import ru.raptors.russian_museum.puzzles.TouchListener;
 
 public class PuzzleActivity extends AppCompatActivity {
 
@@ -115,12 +117,13 @@ public class PuzzleActivity extends AppCompatActivity {
                 }
             }
         });
-
     }
 
     public void checkGameOver() {
         if (isGameOver()) {
-            finish();
+            DialogFragment dialog = DialogGameFinished.newInstance(
+                    getString(R.string.you_solved_puzzles));
+            dialog.show(getFragmentManager(), "dialog");
         }
     }
 

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="total_14">0</integer>
+    <integer name="total_8_13">1</integer>
+    <integer name="total_6_8">0</integer>
+    <integer-array name="right_answers_14">
+    </integer-array>
+    <integer-array name="right_answers_8_13">
+        <item>12</item>
+    </integer-array>
+    <integer-array name="right_answers_6_8">
+    </integer-array>
+    <integer-array name="pictures_14">
+    </integer-array>
+    <integer-array name="pictures_8_13">
+        <item>@drawable/guess_genre_1</item>
+    </integer-array>
+    <integer-array name="pictures_6_8">
+    </integer-array>
+</resources>

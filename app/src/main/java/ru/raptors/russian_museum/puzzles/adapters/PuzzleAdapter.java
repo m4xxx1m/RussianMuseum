@@ -1,4 +1,4 @@
-package ru.raptors.russian_museum.adapters;
+package ru.raptors.russian_museum.puzzles.adapters;
 
 import android.app.Dialog;
 import android.content.Context;
@@ -23,9 +23,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 import ru.raptors.russian_museum.R;
-import ru.raptors.russian_museum.activities.PuzzlesActivity;
+import ru.raptors.russian_museum.puzzles.activities.PuzzlesActivity;
+import ru.raptors.russian_museum.puzzles.activities.PuzzleActivity;
 import ru.raptors.russian_museum.puzzles.Puzzle;
-import ru.raptors.russian_museum.puzzles.PuzzleActivity;
 
 public class PuzzleAdapter extends RecyclerView.Adapter<PuzzleAdapter.ViewHolder> {
 

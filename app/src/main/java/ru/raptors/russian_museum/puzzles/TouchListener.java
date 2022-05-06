@@ -3,11 +3,11 @@ package ru.raptors.russian_museum.puzzles;
 import static java.lang.Math.pow;
 import static java.lang.Math.sqrt;
 import static java.lang.StrictMath.abs;
-
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.RelativeLayout;
+import ru.raptors.russian_museum.puzzles.activities.PuzzleActivity;
 
 public class TouchListener implements View.OnTouchListener {
     private float xDelta;

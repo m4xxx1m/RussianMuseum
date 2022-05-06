@@ -2,6 +2,8 @@ package ru.raptors.russian_museum.puzzles;
 
 import java.io.Serializable;
 
+import ru.raptors.russian_museum.DifficultyLevel;
+
 public class Puzzle implements Serializable {
     private String label;
     private String author;

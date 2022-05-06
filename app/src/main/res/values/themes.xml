@@ -23,8 +23,4 @@
         <item name="android:textColor">@color/black</item>
     </style>
 
-    <style name="EBGaramond">
-        <item name="android:fontFamily">@font/eb_garamond_regular</item>
-    </style>
-
 </resources>

@@ -1,4 +1,4 @@
-package ru.raptors.russian_museum.ui.home;
+package ru.raptors.russian_museum.fragments.home;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;

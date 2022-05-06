@@ -1,15 +1,16 @@
-package ru.raptors.russian_museum.activities;
+package ru.raptors.russian_museum.find_object.activities;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import android.app.DialogFragment;
 import android.os.Bundle;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import java.util.Objects;
 import java.util.Random;
 import ru.raptors.russian_museum.R;
 import ru.raptors.russian_museum.find_object.FindObjectPicture;
 import ru.raptors.russian_museum.find_object.FindObjectView;
+import ru.raptors.russian_museum.fragments.DialogGameFinished;
 
 public class FindObjectActivity extends AppCompatActivity {
     private int taskNum = -1;
@@ -17,7 +18,6 @@ public class FindObjectActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //Objects.requireNonNull(getSupportActionBar()).hide();
         if (savedInstanceState != null) {
             taskNum = savedInstanceState.getInt("taskNum", -1);
         }
@@ -41,5 +41,10 @@ public class FindObjectActivity extends AppCompatActivity {
     protected void onSaveInstanceState(@NonNull Bundle outState) {
         outState.putInt("taskNum", taskNum);
         super.onSaveInstanceState(outState);
+    }
+
+    public void showDialog() {
+        DialogFragment dialog = DialogGameFinished.newInstance(getString(R.string.you_found_object));
+        dialog.show(getFragmentManager(), "dialog");
     }
 }

@@ -1,4 +1,4 @@
-package ru.raptors.russian_museum.ui.home;
+package ru.raptors.russian_museum.fragments.home;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;

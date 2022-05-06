@@ -7,6 +7,7 @@
     <string name="findObject">НАЙДИ ПРЕДМЕТ</string>
     <string name="guessGenre">ОПРЕДЕЛИ ЖАНР</string>
     <string name="guessNGenre">ОПРЕДЕЛИ\nЖАНР</string>
+    <string name="guess_genre_small">Определи жанр</string>
     <string name="tests">ТЕСТЫ</string>
     <string name="age_14_and_more">14+ лет</string>
     <string name="age_8_13">8–13 лет</string>
@@ -14,4 +15,8 @@
     <string name="one_genre_out_of_6">Один из 6\nжанров</string>
     <string name="one_genre_out_of_4">Один из 4\nжанров</string>
     <string name="one_genre_out_of_2">Один из 2\nжанров</string>
+    <string name="well_done">Молодец!</string>
+    <string name="exit">Выйти</string>
+    <string name="you_found_object">Ты нашёл предмет</string>
+    <string name="you_solved_puzzles">Ты правильно составил пазлы</string>
 </resources>

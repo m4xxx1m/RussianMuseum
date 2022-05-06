@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:scrollbars="none"
     android:overScrollMode="never"
-    tools:context=".activities.GuessGenreChooseActivity" >
+    tools:context=".guess_genre.GuessGenreChooseActivity" >
 
     <LinearLayout
         android:layout_width="match_parent"

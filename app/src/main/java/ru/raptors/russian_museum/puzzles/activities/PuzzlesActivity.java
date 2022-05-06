@@ -1,17 +1,13 @@
-package ru.raptors.russian_museum.activities;
+package ru.raptors.russian_museum.puzzles.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
 import android.os.Bundle;
-import android.view.View;
-
 import java.util.ArrayList;
-
 import ru.raptors.russian_museum.R;
-import ru.raptors.russian_museum.adapters.PuzzleAdapter;
-import ru.raptors.russian_museum.puzzles.DifficultyLevel;
+import ru.raptors.russian_museum.puzzles.adapters.PuzzleAdapter;
+import ru.raptors.russian_museum.DifficultyLevel;
 import ru.raptors.russian_museum.puzzles.Puzzle;
 
 public class PuzzlesActivity extends AppCompatActivity {
