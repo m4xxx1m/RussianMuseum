@@ -1,22 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <integer name="total_14">0</integer>
-    <integer name="total_8_13">1</integer>
-    <integer name="total_6_8">0</integer>
+    <integer name="total_14">3</integer>
+    <integer name="total_8_13">3</integer>
+    <integer name="total_6_8">3</integer>
     <integer-array name="right_answers_14">
+        <item>13</item>
+        <item>8</item>
+        <item>3</item>
     </integer-array>
     <integer-array name="right_answers_8_13">
         <item>12</item>
+        <item>13</item>
+        <item>11</item>
     </integer-array>
     <integer-array name="right_answers_6_8">
-    </integer-array>
-    <integer-array name="pictures_14">
-    </integer-array>
-    <integer-array name="pictures_8_13">
-        <item>@drawable/guess_genre_1</item>
-    </integer-array>
-    <integer-array name="pictures_6_8">
+        <item>8</item>
+        <item>11</item>
+        <item>3</item>
     </integer-array>
 
+    <integer-array name="pictures_14">
+        <item>@drawable/guess_genre_portrait_1</item>
+        <item>@drawable/guess_genre_history_1</item>
+        <item>@drawable/guess_genre_battle_1</item>
+    </integer-array>
+    <integer-array name="pictures_8_13">
+        <item>@drawable/guess_genre_landscape_1</item>
+        <item>@drawable/guess_genre_portrait_1</item>
+        <item>@drawable/guess_genre_still_life_1</item>
+    </integer-array>
+    <integer-array name="pictures_6_8">
+        <item>@drawable/guess_genre_history_1</item>
+        <item>@drawable/guess_genre_still_life_1</item>
+        <item>@drawable/guess_genre_battle_1</item>
+    </integer-array>
+
+    <string-array name="genres">
+        <item>Абстракция
+        </item>
+        <item>Аллегория
+        </item>
+        <item>Анималистика
+        </item>
+        <item>Батальный жанр
+        </item>
+        <item>Библейский сюжет
+        </item>
+        <item>Бытовой жанр
+        </item>
+        <item>Иллюстрация
+        </item>
+        <item>Интерьер
+        </item>
+        <item>Историческая живопись
+        </item>
+        <item>Карикатура
+        </item>
+        <item>Мифологический сюжет
+        </item>
+        <item>Натюрморт
+        </item>
+        <item>Пейзаж
+        </item>
+        <item>Портрет
+        </item>
+    </string-array>
+
+    <string-array name="genres_description">
+
+    </string-array>
 
 </resources>

@@ -20,7 +20,7 @@
             android:layout_height="match_parent"
             app:expandedTitleMarginStart="45dp"
             app:expandedTitleMarginBottom="28dp"
-            android:background="@color/my_white_black"
+            android:background="@color/my_white_dark_grey"
             app:layout_scrollFlags="scroll|snap"
             app:maxLines="2"
             app:expandedTitleTextAppearance="@style/TextAppearance.App.CollapsingToolbar.Expanded"

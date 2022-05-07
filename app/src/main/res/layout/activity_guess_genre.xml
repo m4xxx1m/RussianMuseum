@@ -55,13 +55,20 @@
             android:layout_weight="1"
             android:contentDescription="@string/guess_genre_small" />
 
-        <LinearLayout
-            android:id="@+id/place_holder"
+        <ScrollView
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:orientation="vertical"
-            android:paddingTop="15dp"/>
+            android:scrollbars="none"
+            android:overScrollMode="never">
+            <LinearLayout
+                android:id="@+id/place_holder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="15dp"/>
+        </ScrollView>
+
     </LinearLayout>
 
 </LinearLayout>

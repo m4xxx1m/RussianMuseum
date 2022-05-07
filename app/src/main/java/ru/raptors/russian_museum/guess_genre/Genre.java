@@ -34,8 +34,8 @@ public enum Genre {
     }
 
     public String getString(Resources resources) {
-        //return resources.getStringArray(R.array.genres)[value];
-        switch (this) {
+        return resources.getStringArray(R.array.genres)[value];
+        /*switch (this) {
             case Abstraction:
                 return "Абстракция";
             case Allegory:
@@ -66,7 +66,11 @@ public enum Genre {
                 return "Портрет";
             default:
                 return "";
-        }
+        }*/
+    }
+
+    public String getDescription(Resources resources) {
+        return resources.getStringArray(R.array.genres_description)[value];
     }
 
     public static Genre getInstance(int value) throws EnumConstantNotPresentException {
@@ -104,37 +108,3 @@ public enum Genre {
         }
     }
 }
-
-
-/*
-<string-array name="genres">
-        <string>Абстракция
-        </string>
-        <string>Аллегория
-        </string>
-        <string>Анималистика
-        </string>
-        <string>Батальный жанр
-        </string>
-        <string>Библейский сюжет
-        </string>
-        <string>Бытовой жанр
-        </string>
-        <string>Иллюстрация
-        </string>
-        <string>Интерьер
-        </string>
-        <string>Историческая живопись
-        </string>
-        <string>Карикатура
-        </string>
-        <string>Мифологический сюжет
-        </string>
-        <string>Натюрморт
-        </string>
-        <string>Пейзаж
-        </string>
-        <string>Портрет
-        </string>
-    </string-array>
- */

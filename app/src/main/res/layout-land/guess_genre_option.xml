@@ -9,24 +9,24 @@
     app:strokeWidth="1dp"
     app:cardElevation="2dp"
     android:focusable="true"
-    android:layout_marginBottom="8dp"
+    android:layout_marginBottom="12dp"
     app:cardCornerRadius="11dp">
 
     <TextView
         android:id="@+id/text_option"
-        android:layout_width="134dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
-        android:layout_margin="5dp"
         android:fontFamily="@font/futurabookc"
         android:text="1. Батальный жанр"
         android:textColor="@color/black"
-        android:textSize="16sp" />
+        android:textSize="16sp"
+        android:layout_marginHorizontal="8dp"/>
 
     <ImageButton
         android:id="@+id/info_button"
-        android:layout_width="38dp"
-        android:layout_height="38dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
         android:layout_gravity="end|center_vertical"
         android:foreground="?android:attr/selectableItemBackground"
         android:background="#00FFFFFF"
