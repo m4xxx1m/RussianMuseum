@@ -97,11 +97,11 @@ public class GuessGenreActivity extends AppCompatActivity {
             int finalI = i;
             cards.get(i).setOnClickListener(v -> {
                 if (finalI == rightAnswerIndex) {
-                    v.setBackgroundColor(getResources().getColor(R.color.green_right));
+                    v.setBackgroundResource(R.drawable.card_right);
                     showDialog();
                 }
                 else {
-                    v.setBackgroundColor(getResources().getColor(R.color.red_wrong));
+                    v.setBackgroundResource(R.drawable.card_wrong);
                     vibrate();
                 }
             });
