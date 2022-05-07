@@ -19,7 +19,7 @@
         android:layout_gravity="center_vertical"
         android:fontFamily="@font/futurabookc"
         android:text="1. Батальный жанр"
-        android:textColor="@color/black"
+        android:textColor="@color/my_black_white"
         android:textSize="16sp"
         android:layout_marginHorizontal="8dp"/>
 
