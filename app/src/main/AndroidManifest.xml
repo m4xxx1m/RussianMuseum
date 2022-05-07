@@ -33,7 +33,7 @@
             android:name=".find_object.activities.FindObjectActivity"
             android:exported="false" />
         <activity
-            android:name=".guess_genre.GuessGenreChooseActivity"
+            android:name=".guess_genre.activity.GuessGenreChooseActivity"
             android:exported="false" />
     </application>
 

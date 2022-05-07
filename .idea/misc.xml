@@ -20,12 +20,16 @@
         <entry key="..\:/Users/max/AndroidStudioProjects/RussianMuseum/app/src/main/res/drawable/ic_puzzles.xml" value="0.1785" />
         <entry key="..\:/Users/max/AndroidStudioProjects/RussianMuseum/app/src/main/res/font/eb.xml" value="0.20572916666666666" />
         <entry key="..\:/Users/max/AndroidStudioProjects/RussianMuseum/app/src/main/res/font/eb_garamond.xml" value="0.20572916666666666" />
+        <entry key="..\:/Users/max/AndroidStudioProjects/RussianMuseum/app/src/main/res/layout-land/activity_guess_genre.xml" value="0.14858906525573193" />
+        <entry key="..\:/Users/max/AndroidStudioProjects/RussianMuseum/app/src/main/res/layout-land/guess_genre_option.xml" value="0.14858906525573193" />
         <entry key="..\:/Users/max/AndroidStudioProjects/RussianMuseum/app/src/main/res/layout/activity_find_object.xml" value="0.14130434782608695" />
+        <entry key="..\:/Users/max/AndroidStudioProjects/RussianMuseum/app/src/main/res/layout/activity_guess_genre.xml" value="0.1408514492753623" />
         <entry key="..\:/Users/max/AndroidStudioProjects/RussianMuseum/app/src/main/res/layout/activity_main.xml" value="0.14130434782608695" />
         <entry key="..\:/Users/max/AndroidStudioProjects/RussianMuseum/app/src/main/res/layout/activity_puzzles.xml" value="0.1381340579710145" />
         <entry key="..\:/Users/max/AndroidStudioProjects/RussianMuseum/app/src/main/res/layout/fragment_dashboard.xml" value="0.14130434782608695" />
         <entry key="..\:/Users/max/AndroidStudioProjects/RussianMuseum/app/src/main/res/layout/fragment_games.xml" value="0.22" />
         <entry key="..\:/Users/max/AndroidStudioProjects/RussianMuseum/app/src/main/res/layout/fragment_notifications.xml" value="0.14130434782608695" />
+        <entry key="..\:/Users/max/AndroidStudioProjects/RussianMuseum/app/src/main/res/layout/guess_genre_option.xml" value="0.4466666666666667" />
       </map>
     </option>
   </component>

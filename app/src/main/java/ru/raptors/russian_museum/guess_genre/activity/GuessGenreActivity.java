@@ -1,33 +1,55 @@
 package ru.raptors.russian_museum.guess_genre.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.content.res.AppCompatResources;
 
+import android.app.DialogFragment;
+import android.content.Context;
+import android.content.res.TypedArray;
 import android.graphics.drawable.Drawable;
+import android.os.Build;
 import android.os.Bundle;
+import android.os.VibrationEffect;
+import android.os.Vibrator;
+import android.view.LayoutInflater;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
+
+import com.google.android.material.card.MaterialCardView;
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Random;
 import ru.raptors.russian_museum.DifficultyLevel;
 import ru.raptors.russian_museum.R;
+import ru.raptors.russian_museum.fragments.DialogGameFinished;
+import ru.raptors.russian_museum.guess_genre.Genre;
 
 public class GuessGenreActivity extends AppCompatActivity {
 
     private DifficultyLevel difficultyLevel;
     private int taskNum = -1;
+    private ArrayList<MaterialCardView> cards;
+    private ArrayList<Genre> genres;
+    private int rightAnswerIndex;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_guess_genre);
+        findViewById(R.id.back_button).setOnClickListener(v -> finish());
         difficultyLevel = DifficultyLevel.getInstance(getIntent().getIntExtra(
                 "difficultyLevel", -1));
         if (taskNum < 0) {
             taskNum = getTask();
         }
         Drawable drawable = getDrawable();
-        LinearLayout placeHolder = findViewById(R.id.place_holder);
         ImageView imageView = findViewById(R.id.image);
         imageView.setImageDrawable(drawable);
+        genres = new ArrayList<>(getAmountOfTasks());
+        cards = new ArrayList<>(getAmountOfTasks());
+        generateGenresArray();
+        placeOptions();
     }
 
     private int getTask() {
@@ -37,9 +59,86 @@ public class GuessGenreActivity extends AppCompatActivity {
     }
 
     private Drawable getDrawable() {
-        int[] ageRes = new int[] { R.array.right_answers_14, R.array.right_answers_8_13,
-                R.array.right_answers_6_8, };
-        int res = getResources().getIntArray(ageRes[difficultyLevel.getValue()])[taskNum];
-        return getDrawable(res);
+        int[] ageRes = new int[] { R.array.pictures_6_8, R.array.pictures_8_13,
+                R.array.pictures_14, };
+        TypedArray typedArray = getResources().obtainTypedArray(ageRes[difficultyLevel.getValue()]);
+        int res = typedArray.getResourceId(taskNum, -1);
+//        int res = getResources().getIntArray(ageRes[difficultyLevel.getValue()])[taskNum];
+        typedArray.recycle();
+        return AppCompatResources.getDrawable(this, res);
+    }
+
+    private void generateGenresArray() {
+        int rightAnswer = getRightAnswer();
+        int amount = getAmountOfTasks();
+        ArrayList<Integer> genresInt = new ArrayList<>(amount);
+        genresInt.add(rightAnswer);
+        Random random = new Random();
+        while (genresInt.size() < amount) {
+            int randomValue = random.nextInt(Genre.getTotal());
+            if (!genresInt.contains(randomValue))
+                genresInt.add(randomValue);
+        }
+        Collections.shuffle(genresInt);
+        for (int genre : genresInt) {
+            genres.add(Genre.getInstance(genre));
+        }
+        rightAnswerIndex = genresInt.indexOf(rightAnswer);
+    }
+
+    private void placeOptions() {
+        LinearLayout placeHolder = findViewById(R.id.place_holder);
+        LayoutInflater layoutInflater = getLayoutInflater();
+        for (int i = 0; i < getAmountOfTasks(); ++i) {
+            cards.add((MaterialCardView) layoutInflater.inflate(R.layout.guess_genre_option,
+                    placeHolder,false));
+            ((TextView)cards.get(i).findViewById(R.id.text_option)).setText((i+1) + ". " +
+                    genres.get(i).getString(getResources()));
+            int finalI = i;
+            cards.get(i).setOnClickListener(v -> {
+                if (finalI == rightAnswerIndex) {
+                    v.setBackgroundColor(getResources().getColor(R.color.green_right));
+                    showDialog();
+                }
+                else {
+                    v.setBackgroundColor(getResources().getColor(R.color.red_wrong));
+                    vibrate();
+                }
+            });
+            placeHolder.addView(cards.get(i));
+        }
+    }
+
+    public void showDialog() {
+        DialogFragment dialog = DialogGameFinished.newInstance(getString(R.string.you_guessed_genre));
+        dialog.show(getFragmentManager(), "dialog");
+    }
+
+    private void vibrate() {
+        Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            vibrator.vibrate(VibrationEffect.createOneShot(250, VibrationEffect.
+                    DEFAULT_AMPLITUDE));
+        }
+        else {
+            vibrator.vibrate(250);
+        }
+    }
+
+    private int getRightAnswer() {
+        int[] res = new int[] { R.array.right_answers_6_8, R.array.right_answers_8_13,
+                R.array.right_answers_14 };
+        return getResources().getIntArray(res[difficultyLevel.getValue()])[taskNum];
+    }
+
+    private int getAmountOfTasks() {
+        switch (difficultyLevel) {
+            case Under8:
+                return 2;
+            case Under14:
+                return 4;
+            default:
+                return 6;
+        }
     }
 }

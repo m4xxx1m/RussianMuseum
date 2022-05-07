@@ -18,4 +18,6 @@
     <color name="gray_600">#FF757575</color>
     <color name="another_dark_grey">#231F20</color>
     <color name="logo_background">#AC0017</color>
+    <color name="green_right">#56A645</color>
+    <color name="red_wrong">#E51836</color>
 </resources>

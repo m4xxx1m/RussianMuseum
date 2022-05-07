@@ -18,5 +18,6 @@
     <string name="well_done">Молодец!</string>
     <string name="exit">Выйти</string>
     <string name="you_found_object">Ты нашёл предмет</string>
+    <string name="you_guessed_genre">Ты правильно определил жанр</string>
     <string name="you_solved_puzzles">Ты правильно составил пазлы</string>
 </resources>

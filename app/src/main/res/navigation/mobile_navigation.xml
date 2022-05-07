@@ -44,7 +44,7 @@
         tools:layout="@layout/activity_puzzles" />
     <activity
         android:id="@+id/guessGenreChooseActivity"
-        android:name="ru.raptors.russian_museum.guess_genre.GuessGenreChooseActivity"
+        android:name="ru.raptors.russian_museum.guess_genre.activity.GuessGenreChooseActivity"
         android:label="activity_choose_guess_genre"
         tools:layout="@layout/activity_choose_guess_genre"/>
 

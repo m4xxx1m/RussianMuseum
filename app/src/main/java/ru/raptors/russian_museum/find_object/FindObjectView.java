@@ -92,7 +92,7 @@ public class FindObjectView extends View {
     }
 
     private void wrongAnswer() {
-        vibrate(250);
+        vibrate();
         lastTouchTime = Calendar.getInstance().getTime().getTime();
     }
 
@@ -101,14 +101,14 @@ public class FindObjectView extends View {
         ((FindObjectActivity)getContext()).showDialog();
     }
 
-    private void vibrate(int milliseconds) {
+    private void vibrate() {
         Vibrator vibrator = (Vibrator) getContext().getSystemService(Context.VIBRATOR_SERVICE);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            vibrator.vibrate(VibrationEffect.createOneShot(milliseconds, VibrationEffect.
+            vibrator.vibrate(VibrationEffect.createOneShot(250, VibrationEffect.
                     DEFAULT_AMPLITUDE));
         }
         else {
-            vibrator.vibrate(300);
+            vibrator.vibrate(250);
         }
     }
 
@@ -127,7 +127,6 @@ public class FindObjectView extends View {
         y = Math.round((float)(y) * findObjectData.height / finalHeight);
         if (x < findObjectData.minX || x > findObjectData.maxX || y < findObjectData.minY ||
                 y > findObjectData.maxY) {
-            Log.d("Debuggg", "wrong");
             wrongAnswer();
             return;
         }
@@ -141,11 +140,9 @@ public class FindObjectView extends View {
             }
         }
         if (interceptCount % 2 == 0) {
-            Log.d("Debuggg", "Wrong");
             wrongAnswer();
         }
         else {
-            Log.d("Debuggg", "Right!");
             rightAnswer();
         }
     }

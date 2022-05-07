@@ -1,13 +1,11 @@
-package ru.raptors.russian_museum.guess_genre;
+package ru.raptors.russian_museum.guess_genre.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.navigation.Navigation;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import ru.raptors.russian_museum.R;
-import ru.raptors.russian_museum.guess_genre.activity.GuessGenreActivity;
 
 public class GuessGenreChooseActivity extends AppCompatActivity {
 
