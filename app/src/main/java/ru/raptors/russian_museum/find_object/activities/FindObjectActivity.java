@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import android.app.DialogFragment;
 import android.os.Bundle;
+import android.os.Handler;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import java.util.Random;
@@ -46,5 +47,13 @@ public class FindObjectActivity extends AppCompatActivity {
     public void showDialog() {
         DialogFragment dialog = DialogGameFinished.newInstance(getString(R.string.you_found_object));
         dialog.show(getFragmentManager(), "dialog");
+    }
+
+    public void wrongAnswer() {
+        LinearLayout container = findViewById(R.id.place_holder);
+        container.setBackgroundColor(getResources().getColor(R.color.red_wrong));
+        Handler handler = new Handler();
+        handler.postDelayed(() -> container.setBackgroundColor(getResources()
+                .getColor(R.color.my_white_dark_grey)), 2000);
     }
 }

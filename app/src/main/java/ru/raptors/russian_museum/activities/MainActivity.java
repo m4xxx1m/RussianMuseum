@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
                 .build();
         CollapsingToolbarLayout collapsingToolbarLayout = findViewById(R.id.collapsing_toolbar_layout);
         Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
         NavController navController = Navigation.findNavController(this,
                 R.id.nav_host_fragment_activity_main);
         //NavigationUI.setupActionBarWithNavController(toolbar, navController, appBarConfiguration);

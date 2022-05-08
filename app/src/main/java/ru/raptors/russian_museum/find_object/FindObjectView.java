@@ -94,6 +94,7 @@ public class FindObjectView extends View {
     private void wrongAnswer() {
         vibrate();
         lastTouchTime = Calendar.getInstance().getTime().getTime();
+        ((FindObjectActivity) getContext()).wrongAnswer();
     }
 
     private void rightAnswer() {
