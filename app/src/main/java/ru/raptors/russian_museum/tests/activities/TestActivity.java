@@ -94,6 +94,7 @@ public class TestActivity extends AppCompatActivity {
 
     private void setNextButton() {
         nextButton.setOnClickListener(v -> {
+            nextButton.setVisibility(View.INVISIBLE);
             test.addPoints(currentQuestionNum, currentAnswer);
             currentAnswer = -1;
             if (currentQuestionNum + 1 == test.getQuestionsCount()) {
