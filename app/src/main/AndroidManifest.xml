@@ -12,6 +12,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RussianMuseum">
         <activity
+            android:name=".tests.activities.TestActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".tests.activities.TestSelectionActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
             android:name=".guess_genre.activity.GuessGenreActivity"
             android:exported="false" />
         <activity
@@ -19,7 +27,8 @@
             android:exported="false" />
         <activity
             android:name=".puzzles.activities.PuzzleActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".activities.MainActivity"
             android:exported="true">

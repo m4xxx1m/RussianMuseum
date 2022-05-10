@@ -18,6 +18,8 @@
     <color name="gray_600">#FF757575</color>
     <color name="another_dark_grey">#231F20</color>
     <color name="logo_background">#AC0017</color>
-    <color name="green_right">#56A645</color>
-    <color name="red_wrong">#E51836</color>
+    <color name="green_right">#ADF84E</color>
+    <color name="red_wrong">#F07D7D</color>
+    <color name="progress_bar_indicator">#CD4E6C</color>
+    <color name="progress_bar_track">#FF9AB2</color>
 </resources>

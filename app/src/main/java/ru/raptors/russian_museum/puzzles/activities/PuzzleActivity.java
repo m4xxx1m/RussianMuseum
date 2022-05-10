@@ -42,6 +42,7 @@ public class PuzzleActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_puzzle);
+        findViewById(R.id.imageButton).setOnClickListener(v -> finish());
 
         final RelativeLayout layout = findViewById(R.id.puzzlesLayout);
         final ImageView imageView = findViewById(R.id.puzzle);

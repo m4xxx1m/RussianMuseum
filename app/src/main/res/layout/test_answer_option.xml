@@ -10,27 +10,19 @@
     app:cardElevation="2dp"
     android:focusable="true"
     android:layout_marginBottom="12dp"
-    android:padding="10dp"
+    android:padding="15dp"
     app:cardCornerRadius="11dp">
 
     <TextView
         android:id="@+id/text_option"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
         android:layout_margin="10dp"
-        android:fontFamily="@font/futurabookc"
-        android:text="1. Батальный жанр"
+        android:fontFamily="@font/futurabookc_italic"
+        android:textStyle="italic"
+        android:text="Я хочу играть в кино или театре"
         android:textColor="@color/my_black_white"
-        android:textSize="16sp" />
+        android:textSize="20sp" />
 
-    <ImageButton
-        android:id="@+id/info_button"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:layout_gravity="end|center_vertical"
-        android:foreground="?android:attr/selectableItemBackground"
-        android:background="#00FFFFFF"
-        android:contentDescription="info"
-        android:src="@drawable/ic_info" />
 </com.google.android.material.card.MaterialCardView>

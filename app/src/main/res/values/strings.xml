@@ -20,4 +20,9 @@
     <string name="you_found_object">Ты нашёл предмет</string>
     <string name="you_guessed_genre">Ты правильно определил жанр</string>
     <string name="you_solved_puzzles">Ты правильно составил пазлы</string>
+    <string name="pass">Пройти</string>
+    <string name="solved">Пройден</string>
+    <string name="enter_again">Пройти ещё раз</string>
+    <string name="results">Результаты</string>
+    <string name="next">Далее</string>
 </resources>

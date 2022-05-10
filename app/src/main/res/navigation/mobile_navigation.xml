@@ -25,6 +25,9 @@
         <action
             android:id="@+id/action_navigation_games_to_guessGenreChooseActivity"
             app:destination="@id/guessGenreChooseActivity" />
+        <action
+            android:id="@+id/action_navigation_games_to_testSelectionActivity"
+            app:destination="@id/testSelectionActivity" />
     </fragment>
 
     <fragment
@@ -47,5 +50,10 @@
         android:name="ru.raptors.russian_museum.guess_genre.activity.GuessGenreChooseActivity"
         android:label="activity_choose_guess_genre"
         tools:layout="@layout/activity_choose_guess_genre"/>
+    <activity
+        android:id="@+id/testSelectionActivity"
+        android:name="ru.raptors.russian_museum.tests.activities.TestSelectionActivity"
+        android:label="activity_test_selection"
+        tools:layout="@layout/activity_test_selection" />
 
 </navigation>

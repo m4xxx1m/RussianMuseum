@@ -144,18 +144,6 @@ public class GuessGenreActivity extends AppCompatActivity {
                     vibrate();
                 }
             });
-            /*if (difficultyLevel == DifficultyLevel.Over14 && getResources().getConfiguration()
-                    .orientation == Configuration.ORIENTATION_LANDSCAPE) {
-                ViewGroup.MarginLayoutParams cardParams = (ViewGroup.MarginLayoutParams) cards.get(i)
-                        .findViewById(R.id.card).getLayoutParams();
-                cardParams.bottomMargin = dpToPx(5);
-                cards.get(i).findViewById(R.id.card).setLayoutParams(cardParams);
-                ViewGroup.LayoutParams infoParams = cards.get(i).findViewById(R.id.info_button)
-                        .getLayoutParams();
-                infoParams.height = dpToPx(34);
-                infoParams.width = dpToPx(34);
-                cards.get(i).findViewById(R.id.info_button).setLayoutParams(infoParams);
-            }*/
             placeHolder.addView(cards.get(i));
         }
     }
@@ -192,9 +180,4 @@ public class GuessGenreActivity extends AppCompatActivity {
                 return 6;
         }
     }
-
-    /*public int dpToPx(int dp) {
-        return (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, dp,
-                getResources().getDisplayMetrics());
-    }*/
 }
