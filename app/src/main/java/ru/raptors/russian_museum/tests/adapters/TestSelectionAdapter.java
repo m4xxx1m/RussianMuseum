@@ -6,6 +6,9 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
+
+import java.lang.reflect.Type;
+
 import ru.raptors.russian_museum.R;
 import ru.raptors.russian_museum.tests.Test;
 import ru.raptors.russian_museum.tests.TestsData;
@@ -16,7 +19,7 @@ public class TestSelectionAdapter extends FragmentStateAdapter {
     // private final ArrayList<Test> tests;
     private final TestsData testsData = TestsData.getInstance();
 
-    private final int[] picturesRes = new int[] { R.array.tests_results_pictures_0 };
+    // private final int[] picturesRes = new int[] { R.array.tests_results_pictures_0 };
 
     public TestSelectionAdapter(@NonNull FragmentActivity fragmentActivity) {
         super(fragmentActivity);
@@ -29,11 +32,15 @@ public class TestSelectionAdapter extends FragmentStateAdapter {
         String[] questionsArray = fragmentActivity.getResources().getStringArray(R.array
                 .tests_questions);
         String[] resultsArray = fragmentActivity.getResources().getStringArray(R.array.tests_results);
+        TypedArray typedArray = fragmentActivity.getResources().obtainTypedArray(R.array
+                .tests_results_pictures);
         for (int i = 0; i < count; ++i) {
             //tests.add(new Test(infoArray[i], questionsArray[i], resultsArray[i]));
             testsData.addTest(new Test(infoArray[i], questionsArray[i], resultsArray[i],
-                    fragmentActivity.getResources().obtainTypedArray(picturesRes[i])));
+                    fragmentActivity.getResources().obtainTypedArray(typedArray.getResourceId(
+                            i, -1))));
         }
+        typedArray.recycle();
     }
 
     @NonNull
