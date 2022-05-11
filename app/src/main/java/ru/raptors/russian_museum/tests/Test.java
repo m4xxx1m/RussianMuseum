@@ -140,4 +140,8 @@ public class Test {
             points.set(index, points.get(index) + 1);
         }
     }
+
+    public int getResultIndex() {
+        return resultIndex;
+    }
 }
