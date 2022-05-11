@@ -1,8 +1,12 @@
 package ru.raptors.russian_museum.tests.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Context;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.VibrationEffect;
+import android.os.Vibrator;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.LinearLayout;
@@ -82,6 +86,7 @@ public class TestActivity extends AppCompatActivity {
                     option.setBackgroundResource(R.drawable.card_right);
                 }
                 else {
+                    vibrate();
                     option.setBackgroundResource(R.drawable.card_wrong);
                     int index = test.getQuestion(currentQuestionNum).getRightAnswerIndex();
                     cards.get(index).setBackgroundResource(R.drawable.card_right);
@@ -89,6 +94,17 @@ public class TestActivity extends AppCompatActivity {
                 nextButton.setVisibility(View.VISIBLE);
             });
             placeHolder.addView(option);
+        }
+    }
+
+    private void vibrate() {
+        Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            vibrator.vibrate(VibrationEffect.createOneShot(250, VibrationEffect.
+                    DEFAULT_AMPLITUDE));
+        }
+        else {
+            vibrator.vibrate(250);
         }
     }
 
