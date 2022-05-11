@@ -20,7 +20,7 @@
             android:id="@+id/test_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/black"
+            android:textColor="@color/my_black_white"
             android:textSize="48sp"
             android:fontFamily="@font/futurademic"
             app:layout_constraintBaseline_toTopOf="parent"

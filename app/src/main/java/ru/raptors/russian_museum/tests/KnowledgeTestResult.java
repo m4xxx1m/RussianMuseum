@@ -1,7 +1,7 @@
 package ru.raptors.russian_museum.tests;
 
 public class KnowledgeTestResult extends TestResult {
-    private int points;
+    int points;
 
     public KnowledgeTestResult(String text, int points, int res) {
         this.text = text;

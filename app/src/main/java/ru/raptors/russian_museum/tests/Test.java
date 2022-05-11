@@ -45,16 +45,28 @@ public class Test {
     }
 
     public void finish() {
-        int max = 0;
-        int maxInd = 0;
-        for (int i = 0; i < points.size(); ++i) {
-            if (points.get(i) > max) {
-                max = points.get(i);
-                maxInd = i;
+        if (isMegaTest) {
+            int max = 0;
+            int maxInd = 0;
+            for (int i = 0; i < points.size(); ++i) {
+                if (points.get(i) > max) {
+                    max = points.get(i);
+                    maxInd = i;
+                }
+                points.set(i, 0);
             }
-            points.set(i, 0);
+            resultIndex = maxInd;
         }
-        resultIndex = maxInd;
+        else {
+            for (int i = 0; i < results.size(); ++i) {
+                int point = ((KnowledgeTestResult)results.get(i)).points;
+                if (points.get(0) >= point) {
+                    resultIndex = i;
+                    break;
+                }
+            }
+            points.set(0, 0);
+        }
         isTestSolved = true;
     }
 
@@ -127,9 +139,5 @@ public class Test {
         if (index >= 0) {
             points.set(index, points.get(index) + 1);
         }
-    }
-
-    public int getResultIndex() {
-        return resultIndex;
     }
 }

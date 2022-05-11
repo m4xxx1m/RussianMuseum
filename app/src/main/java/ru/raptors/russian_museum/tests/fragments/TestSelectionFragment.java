@@ -21,6 +21,7 @@ import ru.raptors.russian_museum.tests.Test;
 import ru.raptors.russian_museum.tests.TestsData;
 import ru.raptors.russian_museum.tests.activities.TestActivity;
 import ru.raptors.russian_museum.tests.activities.TestSelectionActivity;
+import ru.raptors.russian_museum.tests.adapters.TestSelectionAdapter;
 
 public class TestSelectionFragment extends Fragment {
     private Test test;
@@ -30,6 +31,9 @@ public class TestSelectionFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        if (test == null) {
+            return inflater.inflate(R.layout.fragment_test_selection, container, false);
+        }
         ViewGroup rootView = (ViewGroup) inflater.inflate(
                 getLayoutResource(), container, false);
         rootView.findViewById(R.id.button_enter_test).setOnClickListener(v -> enterTest());
@@ -47,7 +51,6 @@ public class TestSelectionFragment extends Fragment {
         //Bitmap bitmap = BitmapFactory.decodeResource(getResources(), test.getResultIndex());
         card.setBackgroundResource(test.getResultRes());
     }
-
 
     private int getLayoutResource() {
         if (test.isSolved()) {
