@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "611504737908",
+    "project_id": "russianmuzeum",
+    "storage_bucket": "russianmuzeum.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:611504737908:android:340da23b3b691d8f9dcb21",
+        "android_client_info": {
+          "package_name": "ru.raptors.russian_museum"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "611504737908-vs2h9djf7fph7oakujgjvivinsjdanjj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCv_S52bJxU7pj-jXGmh7U58qM5uqrW1tU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "611504737908-vs2h9djf7fph7oakujgjvivinsjdanjj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
