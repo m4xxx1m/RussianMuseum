@@ -25,4 +25,14 @@
     <string name="enter_again">Пройти ещё раз</string>
     <string name="results">Результаты</string>
     <string name="next">Далее</string>
+    <string name="sign_up">Зарегистрироваться</string>
+    <string name="or">или</string>
+    <string name="already_have_account">Уже есть аккаунт</string>
+    <string name="try_again">Повторите пароль</string>
+    <string name="password">Пароль</string>
+    <string name="e_mail">Электронная почта</string>
+    <string name="forgot_password">Забыли пароль?</string>
+    <string name="sign_in">Войти</string>
+    <string name="create_account">Создать аккаунт</string>
+    <string name="enter_without_account">Войти без аккаунта</string>
 </resources>
